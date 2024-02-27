@@ -9,12 +9,21 @@ import UIKit
 
 class DrawingView: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    var lake: UIImage? = UIImage(named: "lakeLouiseOne.png")
+    
+    func drawLakeLouise(){
+        guard let lake = self.lake else{
+            print("**** Cannot find Lake! ****")
+            return
+        }
+    
+    let p = CGPoint(
+    x: (self.bounds.size.width - lake.size.width) / 2,
+    y: (self.bounds.size.height - lake.size.height) / 2)
+        lake.draw(at: p)
     }
-    */
-
+    
+    override func draw(_ rect: CGRect){
+        drawLakeLouise()
+    }
 }

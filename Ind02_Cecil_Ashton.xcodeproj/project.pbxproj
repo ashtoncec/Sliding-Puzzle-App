@@ -14,6 +14,7 @@
 		A23D68562B8CF214009078FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A23D68552B8CF214009078FA /* Assets.xcassets */; };
 		A23D68592B8CF214009078FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A23D68572B8CF214009078FA /* LaunchScreen.storyboard */; };
 		A23D68612B8D29F1009078FA /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A23D68602B8D29F1009078FA /* .gitignore */; };
+		A29E78BC2B8E6F7800A2EF8D /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29E78BB2B8E6F7800A2EF8D /* DrawingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A23D68582B8CF214009078FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A23D685A2B8CF214009078FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A23D68602B8D29F1009078FA /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A29E78BB2B8E6F7800A2EF8D /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				A23D684E2B8CF213009078FA /* SceneDelegate.swift */,
 				A23D68502B8CF213009078FA /* ViewController.swift */,
 				A23D68522B8CF213009078FA /* Main.storyboard */,
+				A29E78BB2B8E6F7800A2EF8D /* DrawingView.swift */,
 				A23D68552B8CF214009078FA /* Assets.xcassets */,
 				A23D68572B8CF214009078FA /* LaunchScreen.storyboard */,
 				A23D685A2B8CF214009078FA /* Info.plist */,
@@ -145,6 +148,7 @@
 				A23D68512B8CF213009078FA /* ViewController.swift in Sources */,
 				A23D684D2B8CF213009078FA /* AppDelegate.swift in Sources */,
 				A23D684F2B8CF213009078FA /* SceneDelegate.swift in Sources */,
+				A29E78BC2B8E6F7800A2EF8D /* DrawingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
