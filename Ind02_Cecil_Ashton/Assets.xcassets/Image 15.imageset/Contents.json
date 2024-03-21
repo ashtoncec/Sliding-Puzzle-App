@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "LakeLouise_GettyImages-6b1e83ecabbb423c9cc66ea024c0e6bf-2-4.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
