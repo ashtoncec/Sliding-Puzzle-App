@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -40,14 +41,15 @@
                                     <backgroundConfiguration key="background" image="button-2"/>
                                 </buttonConfiguration>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xla-st-JoM">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xla-st-JoM">
                                 <rect key="frame" x="16" y="136" width="372" height="465"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rJM-EC-0pC">
                                         <rect key="frame" x="0.0" y="0.0" width="372" height="93"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image 1" translatesAutoresizingMaskIntoConstraints="NO" id="XvT-CO-Qec">
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XvT-CO-Qec">
                                                 <rect key="frame" x="0.0" y="0.0" width="93" height="93"/>
+                                                <color key="backgroundColor" systemColor="labelColor"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="93" id="Bfa-XC-r6o"/>
@@ -294,6 +296,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.31833444182405768" green="0.17181603380527696" blue="0.039651498395099502" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xla-st-JoM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="77" id="Hz3-aJ-M7w"/>
+                            <constraint firstItem="xla-st-JoM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="f0N-iZ-Xkh"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -403,7 +409,6 @@
     </scenes>
     <resources>
         <image name="Button" width="92" height="69"/>
-        <image name="Image 1" width="200" height="200"/>
         <image name="Image 10" width="200" height="200"/>
         <image name="Image 11" width="200" height="200"/>
         <image name="Image 12" width="200" height="200"/>
@@ -424,5 +429,8 @@
         <image name="Image 8" width="200" height="200"/>
         <image name="Image 9" width="200" height="200"/>
         <image name="button-2" width="92" height="69"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
