@@ -23,23 +23,17 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViG-mh-rfJ">
-                                <rect key="frame" x="153" y="639" width="87" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Shuffle">
-                                    <backgroundConfiguration key="background" image="Button"/>
-                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
-                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
-                                </buttonConfiguration>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gep-AI-1f3">
                                 <rect key="frame" x="128" y="704" width="136" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Show Answer">
                                     <backgroundConfiguration key="background" image="button-2"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="answerTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hq1-RC-7VJ"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xla-st-JoM">
                                 <rect key="frame" x="16" y="136" width="372" height="465"/>
@@ -292,6 +286,21 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViG-mh-rfJ">
+                                <rect key="frame" x="153" y="621" width="87" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Shuffle">
+                                    <backgroundConfiguration key="background" image="Button"/>
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="shuffleTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GCe-rx-0Ma"/>
+                                    <outletCollection property="gestureRecognizers" destination="3iQ-2H-iJe" appends="YES" id="vBm-iW-ivK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.31833444182405768" green="0.17181603380527696" blue="0.039651498395099502" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -301,6 +310,30 @@
                             <constraint firstItem="xla-st-JoM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="f0N-iZ-Xkh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="answerButton" destination="Gep-AI-1f3" id="flp-wV-2ck"/>
+                        <outlet property="imageView" destination="XvT-CO-Qec" id="tWL-wR-m39"/>
+                        <outlet property="imageView10" destination="R0S-K3-qFo" id="YhZ-fp-Xyj"/>
+                        <outlet property="imageView11" destination="RhL-D7-MEZ" id="RA1-ah-mX4"/>
+                        <outlet property="imageView12" destination="d3j-Dw-giy" id="TqF-LL-exc"/>
+                        <outlet property="imageView13" destination="C4n-5w-PF0" id="4YZ-ay-cLe"/>
+                        <outlet property="imageView14" destination="dKc-Nz-iko" id="UQ2-UO-qXa"/>
+                        <outlet property="imageView15" destination="HA2-NG-K1O" id="bHm-VE-H3Z"/>
+                        <outlet property="imageView16" destination="rqy-Ew-7nv" id="poq-SO-8Ir"/>
+                        <outlet property="imageView17" destination="8Pd-CE-HVX" id="YPg-qD-tNM"/>
+                        <outlet property="imageView18" destination="8Xb-d3-0fR" id="2xP-lc-IY0"/>
+                        <outlet property="imageView19" destination="0zT-m2-fKQ" id="2bA-ug-GG3"/>
+                        <outlet property="imageView2" destination="x7e-pB-ecm" id="234-ij-Qyr"/>
+                        <outlet property="imageView20" destination="7aj-o3-RhV" id="5Lg-Ot-hEr"/>
+                        <outlet property="imageView3" destination="bjR-63-9BG" id="eU2-xm-azy"/>
+                        <outlet property="imageView4" destination="5Fx-zi-Fw4" id="2B6-3m-wW9"/>
+                        <outlet property="imageView5" destination="SUv-TN-MxE" id="b3P-Or-D0U"/>
+                        <outlet property="imageView6" destination="UVa-Hb-WOE" id="rAm-TU-aea"/>
+                        <outlet property="imageView7" destination="XkA-sC-4ty" id="YzA-9e-Te4"/>
+                        <outlet property="imageView8" destination="QHf-gW-AS1" id="uoL-6K-CRT"/>
+                        <outlet property="imageView9" destination="yMA-kt-vw2" id="NOV-EG-9je"/>
+                        <outlet property="shuffleButton" destination="ViG-mh-rfJ" id="fVQ-WH-MXL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="ehf-Cl-PuV">
@@ -401,6 +434,16 @@
                 <tapGestureRecognizer id="32p-QX-xHS">
                     <connections>
                         <action selector="TapGesture:" destination="BYZ-38-t0r" id="iTu-Dd-gwr"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="3iQ-2H-iJe" userLabel="ShuffleTap">
+                    <connections>
+                        <action selector="shuffleTap:" destination="BYZ-38-t0r" id="Hon-ea-zzy"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Lw5-FG-zex" userLabel="ShowAnswerTap">
+                    <connections>
+                        <action selector="answerTap:" destination="BYZ-38-t0r" id="9aD-td-lIz"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
