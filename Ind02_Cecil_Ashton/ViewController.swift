@@ -125,7 +125,6 @@ class ViewController: UIViewController {
           imageViews.forEach { $0.isUserInteractionEnabled = true }
           showingAnswer = false
           answerButton.setTitle("Show Answer", for: .normal)
-        
     }
     
     
@@ -194,5 +193,6 @@ class ViewController: UIViewController {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Continue", style: .default))
         self.present(alert, animated: true, completion: nil)
+        
     }
 }
